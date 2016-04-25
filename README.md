@@ -83,6 +83,7 @@ Have a look at **PACKAGES** to see what's included and check out **STATUS** to t
    Also, I prefer to put all my toolchains into /opt/toolchains rather than /usr/local. There's nothing wrong with
    either, it's just a personal preference. So if you wish to use /opt/toolchains, the line from above would instead
    be
+
     export PS3DEV=/opt/toolchains/ps3dev
 
    Clone the repository and execute toolchain.sh
