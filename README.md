@@ -7,9 +7,11 @@ the PS3Libraries with some additions and the Enlightenment Foundation Libraries.
 Have a look at **PACKAGES** to see what's included and check out **STATUS** to the see the current status.
 
   **Current Issues**
+
   The following is by Spork. He no longer maintains the toolchain. I am trying to pick up where he left off,
   so if you find any problems or want to contribute, e-mail me at ChillyWillyGuru@gmail.com. As I check into
   this, I'll edit the section below to reflect the current state of the toolchain.
+
    There are some currently known problems.  Libbfd and libiberty weren't meant to be standalone libraries.  I needed
    a PPU version of libiberty to compile a PS3 program or two so I recompiled it from the binutils package as a
    powerpc64 library.  To get libbfd to work, you might need to add the libiberty library to the linker options.
@@ -42,6 +44,7 @@ Have a look at **PACKAGES** to see what's included and check out **STATUS** to t
    That's the correct installation location for the zipconf.h header.
 
   **Installation**
+
    If this is the first time installing, you need to make sure you have the dependencies installed.
    For a debian-based linux system, use the following:
 
@@ -51,6 +54,7 @@ Have a look at **PACKAGES** to see what's included and check out **STATUS** to t
     libssl-dev python-libxml2 xutils-dev
 
    You also need to install Cg Toolkit from nVidia. Go to the Cg Toolkit webpage:
+
     https://developer.nvidia.com/cg-toolkit-download
    Download Cg Toolkit 3.1. If you have a 32-bit system, download the 32-bit tgz if you feel up to manually
    copying the files into your system, or download the deb and use gdebi to install if you aren't comfortable
